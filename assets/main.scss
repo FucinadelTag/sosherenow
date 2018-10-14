@@ -1,0 +1,135 @@
+@import "~bulma/sass/utilities/_all";
+
+$family-serif: 'Open Sans', sans-serif;
+
+// Use the new serif family
+$family-primary: $family-serif;
+
+$button-color: $orange;
+
+$modal-card-head-radius: 0px;
+
+//$modal-content-width: 50%;
+
+
+@import "~bulma";
+
+div.spazio_bianco {
+  height: 1.1rem;
+  .double {
+    height: 2.1rem;
+  }
+}
+
+.line_up {
+    border-top-color: $grey-ligh;
+    border-top-width: .1rem;
+    border-top-style: solid;
+}
+
+.line_bottom {
+    border-bottom-color: $grey;
+    border-bottom-width: .08rem;
+    border-bottom-style: solid;
+    padding-bottom: 0.4rem;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+.rosso {
+    color: $rosso;
+}
+
+.verde {
+    color: $verde;
+}
+
+.padding {
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.default {
+    .contenuto {
+        //margin-top: 10px;
+        //border-top: 1px solid;
+        //border-top-color: $grey-ligh;
+    }
+
+    .footer {
+        margin-top: 5rem;
+        padding-bottom: 3rem;
+        // .Cookie {
+        //     font-size: 0.8rem;
+        //     background-color: #000000;
+        //     color: #ffffff;
+        //     margin: 0rem;
+        //     > * {
+        //         margin: 0;
+        //         align-self: center;
+        //     }
+        // }
+        // .Cookie--base {
+        //     padding-left: 0.1rem;
+        //     padding-top: 0.1rem;
+        //     padding-bottom: 0.1rem;
+        //     margin: 0rem;
+        // },
+        // .Cookie__button {
+        //     padding-top: 0rem;
+        //     padding-bottom: 0rem;
+        // }
+    }
+}
+
+.callToAction {
+    //padding: 1rem;
+
+    .descrizione {
+        font-style: italic;
+        color: $orange;
+        font-weight: bold
+    }
+    .button {
+        background-color: #fdec4f;
+        border: 0px;
+        color: #000000;
+        font-size: 130%;
+        font-weight: 500;
+        //letter-spacing: 0.2rem;
+        //text-transform: uppercase;
+
+        &:hover {
+            color: #000000;
+            background-color: #ffdd57;
+        }
+
+        &:visited {
+            color: #000000;
+            background-color: #fdec4f;
+        }
+    }
+
+}
+
+.leggero {
+    color: #B8B8B8;
+}
+
+.testata {
+    .title {
+        font-weight: 1000;
+    }
+    .testo {
+        background-color: rgba(255,255,255,0.8);
+    }
+
+    .formPreventivo {
+        //background-color: rgba(255,255,255,0.8);
+    }
+
+
+}
