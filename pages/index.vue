@@ -4,7 +4,7 @@
             <div class="hero-body" style="background: url(https://placehold.it/1000x500); background-position: center; background-size:cover;">
                 <div class="container">
                     <h1 class="title is-1">Quando hai bosogno di aiuto</h1>
-                    <h2 class="subtitle">Fatti trovare subito, nel punto esatto!</h2>
+                    <h2 class="subtitle">Renditi visibile, sempre!</h2>
                 </div>
             </div>
         </section>
