@@ -5,7 +5,7 @@
                 <nav class="navbar myMenu" role="navigation" aria-label="main navigation">
                     <div class="navbar-brand">
                         <a class="navbar-item" href="/">
-                            <img class="imglogo" src="https://www.sosherenow.com/wp-content/uploads/2017/08/logo-menu.png" alt="SosHereNow.com">
+                            <img class="imglogo" src="/images/logo-menu.png" alt="SosHereNow.com">
                         </a>
 
                         <button class="button navbar-burger" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
