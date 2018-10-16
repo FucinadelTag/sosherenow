@@ -1,7 +1,7 @@
 <template>
     <span>
         <section class="hero is-medium has-bg-img is-hidden-mobile">
-            <div class="hero-body" style="background: url(https://placehold.it/1000x500); background-position: center; background-size:cover;">
+            <div class="hero-body" style="background: url(https://placehold.it/1000x500?text=.); background-position: center; background-size:cover;">
                 <div class="container">
                     <h1 class="title is-1">Quando hai bosogno di aiuto</h1>
                     <h2 class="subtitle">Renditi visibile, sempre!</h2>
@@ -13,7 +13,7 @@
 
         <div class="has-text-centered">
             <p class="title is-1">Un pallone per salvare una vita</p>
-            <p class="title is-2">Chiedi aiuto in modo facile, veloce e chiaro</p>
+            <p class="title is-2">Un semplice segnale per chiedere aiuto</p>
         </div>
 
         <div class="spazio_bianco"></div>
@@ -44,23 +44,18 @@
         <div  class="box columns vendiamo">
             <div class="column content is-6">
                 <p>
-                    Da anni ci occupiamo di diffondere sul mercato italiano dispositivi medicali ad uso terapeutico e per il monitoraggio della salute.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
                 <p>
-                    Solede offre una gamma di apparecchiature elettromedicali di alta qualità, con un occhio di riguardo al design. I nostri prodotti sono intuitivi e di facile utilizzo, ma allo stesso tempo al passo con le migliori tecnologie del settore.
-                </p>
-                <p>
-                    <span class="title is-4">I nostri prodotti:</span>
+                    <span class="title is-4">I vantaggi:</span>
                 </p>
                 <ul>
-                    <li>Misuratori di pressione</li>
-                    <li>Aerosol</li>
-                    <li>Defibrillatori</li>
-                    <li>Elettrocardiografi</li>
+                    <li>I soccorritori individuano subito dove c'è bisogno di loro</li>
+                    <li>Prima che l'ambulanza arriva chiunque è nei dintori sa che qualcuno ha bosogno di aiuto</li>
                 </ul>
             </div>
             <div class="column">
-                <img src="https://prismic-io.s3.amazonaws.com/smarthealthcare/1da26f90bcfc931bd0d190867a0b7fa79f9d1118_auscultare.jpg" alt="Smart Health Care" />
+                <img src="https://placehold.it/500x500?text=Luoghi affollati" alt="Luoghi affollati" />
             </div>
 
         </div>
@@ -69,24 +64,19 @@
 
         <div  class="box columns vendiamo">
             <div class="column">
-                <img src="https://prismic-io.s3.amazonaws.com/smarthealthcare/1da26f90bcfc931bd0d190867a0b7fa79f9d1118_auscultare.jpg" alt="Smart Health Care" />
+                <img src="https://placehold.it/500x500?text=In auto" alt="In auto" />
             </div>
 
             <div class="column content is-6">
                 <p>
-                    Da anni ci occupiamo di diffondere sul mercato italiano dispositivi medicali ad uso terapeutico e per il monitoraggio della salute.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
                 <p>
-                    Solede offre una gamma di apparecchiature elettromedicali di alta qualità, con un occhio di riguardo al design. I nostri prodotti sono intuitivi e di facile utilizzo, ma allo stesso tempo al passo con le migliori tecnologie del settore.
-                </p>
-                <p>
-                    <span class="title is-4">I nostri prodotti:</span>
+                    <span class="title is-4">I vantaggi:</span>
                 </p>
                 <ul>
-                    <li>Misuratori di pressione</li>
-                    <li>Aerosol</li>
-                    <li>Defibrillatori</li>
-                    <li>Elettrocardiografi</li>
+                    <li>Il segnale di aiuto è visibile da lontano</li>
+                    <li>Nessun pericoli di essere investiti</li>
                 </ul>
             </div>
 
@@ -97,23 +87,18 @@
         <div  class="box columns vendiamo">
             <div class="column content is-6">
                 <p>
-                    Da anni ci occupiamo di diffondere sul mercato italiano dispositivi medicali ad uso terapeutico e per il monitoraggio della salute.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
                 <p>
-                    Solede offre una gamma di apparecchiature elettromedicali di alta qualità, con un occhio di riguardo al design. I nostri prodotti sono intuitivi e di facile utilizzo, ma allo stesso tempo al passo con le migliori tecnologie del settore.
-                </p>
-                <p>
-                    <span class="title is-4">I nostri prodotti:</span>
+                    <span class="title is-4">I vantaggi:</span>
                 </p>
                 <ul>
-                    <li>Misuratori di pressione</li>
-                    <li>Aerosol</li>
-                    <li>Defibrillatori</li>
-                    <li>Elettrocardiografi</li>
+                    <li>Segnala il bisogno di aiuto anche dove non prende il cellulare</li>
+                    <li>Indica il punto preciso dove ti trovi</li>
                 </ul>
             </div>
             <div class="column">
-                <img src="https://prismic-io.s3.amazonaws.com/smarthealthcare/1da26f90bcfc931bd0d190867a0b7fa79f9d1118_auscultare.jpg" alt="Smart Health Care" />
+                <img src="https://placehold.it/500x500?text=In montagna" alt="In montagna" />
             </div>
 
         </div>
@@ -122,27 +107,54 @@
 
         <div  class="box columns vendiamo">
             <div class="column">
-                <img src="https://prismic-io.s3.amazonaws.com/smarthealthcare/1da26f90bcfc931bd0d190867a0b7fa79f9d1118_auscultare.jpg" alt="Smart Health Care" />
+                <img src="https://placehold.it/500x500?text=In barca" alt="In barca" />
             </div>
 
             <div class="column content is-6">
                 <p>
-                    Da anni ci occupiamo di diffondere sul mercato italiano dispositivi medicali ad uso terapeutico e per il monitoraggio della salute.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
                 <p>
-                    Solede offre una gamma di apparecchiature elettromedicali di alta qualità, con un occhio di riguardo al design. I nostri prodotti sono intuitivi e di facile utilizzo, ma allo stesso tempo al passo con le migliori tecnologie del settore.
-                </p>
-                <p>
-                    <span class="title is-4">I nostri prodotti:</span>
+                    <span class="title is-4">I vantaggi:</span>
                 </p>
                 <ul>
-                    <li>Misuratori di pressione</li>
-                    <li>Aerosol</li>
-                    <li>Defibrillatori</li>
-                    <li>Elettrocardiografi</li>
+                    <li>Il pallone rimane in aria a lungo</li>
+                    <li>Sei visibile anche in caso di onde alte</li>
                 </ul>
             </div>
 
+        </div>
+
+        <h2 class="title is-2">Facile da Usare</h2>
+
+        <div  class="box columns">
+            <div class="column">
+                <p>
+                    <span class="title is-5">Prendi SOS Here Now con una mano</span>
+                </p>
+                <img src="https://placehold.it/500x500?text=Immagine del pallone" alt="Subito visibile" />
+                <p>
+                    <strong>SOS Here now</strong> pesa poco più di un chilo e può essere tenuto con una mano
+                </p>
+            </div>
+            <div class="column">
+                <p>
+                    <span class="title is-4">Ruota la maniglia sul fondo</span>
+                </p>
+                <img src="https://placehold.it/500x500?text=Immagine della luce" alt="Luce all'interno" />
+                <p>
+                    Ruotando la maniglia il pallone incomincerà a gonfiarsi e la luce al suo interno si accenderò
+                </p>
+            </div>
+            <div class="column">
+                <p>
+                    <span class="title is-4">Attendi i soccorsi</span>
+                </p>
+                <img src="https://placehold.it/500x500?text=Immagine scritta SOS" alt="Scritta SOS" />
+                <p>
+                    Il pallone salirà ad una altezza di 3 metri indicando la tua posizione
+                </p>
+            </div>
         </div>
     </span>
 </template>
