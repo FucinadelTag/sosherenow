@@ -130,7 +130,7 @@
         <div  class="box columns">
             <div class="column">
                 <p>
-                    <span class="title is-5">Prendi SOS Here Now</span>
+                    <span class="title is-4">Prendi SOS Here Now</span>
                 </p>
                 <img src="https://placehold.it/500x500?text=Immagine del pallone" alt="Subito visibile" />
                 <p>
