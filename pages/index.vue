@@ -61,7 +61,7 @@
                 </p>
             </div>
             <div class="column">
-                <img src="https://placehold.it/500x500?text=Luoghi affollati" alt="Luoghi affollati" />
+                <img src="https://placehold.it/700x350?text=Luoghi affollati" alt="Luoghi affollati" />
             </div>
 
         </div>
@@ -72,7 +72,7 @@
 
         <div  class="box columns vendiamo">
             <div class="column">
-                <img src="https://placehold.it/500x500?text=In auto" alt="In auto" />
+                <img src="https://placehold.it/700x350?text=In auto" alt="In auto" />
             </div>
 
             <div class="column content is-6">
@@ -112,7 +112,7 @@
                 </p>
             </div>
             <div class="column">
-                <img src="https://placehold.it/500x500?text=In montagna" alt="In montagna" />
+                <img src="https://placehold.it/700x350?text=In montagna" alt="In montagna" />
             </div>
 
         </div>
@@ -122,7 +122,7 @@
 
         <div  class="box columns vendiamo">
             <div class="column">
-                <img src="https://placehold.it/500x500?text=In barca" alt="In barca" />
+                <img src="https://placehold.it/700x350?text=In barca" alt="In barca" />
             </div>
 
             <div class="column content is-6">
@@ -194,7 +194,7 @@
                         Un prototipo funzionanete realizzato in ogni sua parte con stampa 3D
                     </p>
 
-                    <img src="https://placehold.it/700x300?text=Foto o gallery dei prototipi" alt="" />
+                    <img src="https://placehold.it/700x350?text=Foto o gallery dei prototipi" alt="" />
                 </span>
             </div>
             <div class="column is-two-fifths timeline">
