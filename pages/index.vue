@@ -240,6 +240,58 @@
         </div>
 
         <div class="spazio_bianco"></div>
+        <h2 class="title is-2"><i class="fas fa-wrench"></i> Cosa abbiamo fatto fino ad oggi:</h2>
+            <div  class="box columns">
+                <div class="column">
+                    <div class="steps">
+                        <div class="step-item is-completed is-success">
+                            <div class="step-marker">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                            </div>
+                            <div class="step-details">
+                                <p class="step-title">Step 1</p>
+                                <p>Progettazione e prototipazione</p>
+                            </div>
+                        </div>
+                        <div class="step-item is-completed is-success">
+                            <div class="step-marker">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="step-details">
+                                <p class="step-title">Step 2</p>
+                                <p>Ottenimento del brevetto internazionale.</p>
+                            </div>
+                        </div>
+                        <div class="step-item is-completed is-success">
+                            <div class="step-marker">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="step-details">
+                                <p class="step-title">Step 3</p>
+                                <p>Ottenimento certificazione CE</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-marker">
+                                <span class="icon">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                            </div>
+                            <div class="step-details">
+                                <p class="step-title">Step 4</p>
+                                <p>Avviamento della campagna di prevendita</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="spazio_bianco"></div>
+            </div>
+
+        <div class="spazio_bianco"></div>
 
         <h2 class="title is-2"><i class="fas fa-shopping-cart"></i> Acquista oggi SOS HERE NOW</h2>
         <div  class="box columns">
