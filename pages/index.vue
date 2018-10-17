@@ -125,7 +125,7 @@
 
         </div>
 
-        <h2 class="title is-2">In caso di Bisogno</h2>
+        <h2 class="title is-2">Hai bisogno di aiuto?</h2>
 
         <div  class="box columns">
             <div class="column">
