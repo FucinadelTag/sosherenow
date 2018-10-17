@@ -132,7 +132,7 @@
                 <p>
                     <span class="title is-4">Prendi SOS Here Now</span>
                 </p>
-                <img src="https://placehold.it/500x500?text=Immagine del pallone" alt="Subito visibile" />
+                <img src="https://placehold.it/500x500?text=Immagine" alt="" />
                 <p>
                     <strong>SOS Here now</strong> pesa poco più di un chilo e può essere tenuto con una mano
                 </p>
@@ -141,7 +141,7 @@
                 <p>
                     <span class="title is-4">Ruota la maniglia sul fondo</span>
                 </p>
-                <img src="https://placehold.it/500x500?text=Immagine della luce" alt="Luce all'interno" />
+                <img src="https://placehold.it/500x500?text=Immagine" alt="" />
                 <p>
                     Ruotando la maniglia il pallone incomincerà a gonfiarsi e la luce al suo interno si accenderò
                 </p>
@@ -150,7 +150,7 @@
                 <p>
                     <span class="title is-4">Attendi i soccorsi</span>
                 </p>
-                <img src="https://placehold.it/500x500?text=Immagine scritta SOS" alt="Scritta SOS" />
+                <img src="https://placehold.it/500x500?text=Immagine" alt="" />
                 <p>
                     Il pallone salirà ad una altezza di 3 metri indicando la tua posizione
                 </p>
