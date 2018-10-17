@@ -188,7 +188,7 @@
                             </div>
                             <div class="step-details">
                                 <p class="step-title">Progettazione</p>
-                                <p>Progettazione e prototipazione</p>
+                                <p>Progettazione e studio dei materiali</p>
                             </div>
                         </div>
                         <div class="step-item is-completed is-success">
@@ -197,7 +197,7 @@
                             </div>
                             <div class="step-details">
                                 <p class="step-title">Brevetto</p>
-                                <p>Ottenimento del brevetto internazionale.</p>
+                                <p>Ottenimento del brevetto internazionale</p>
                             </div>
                         </div>
                         <div class="step-item is-completed is-success">
@@ -206,7 +206,7 @@
                             </div>
                             <div class="step-details">
                                 <p class="step-title">Certificazioni</p>
-                                <p>Ottenimento certificazione CE</p>
+                                <p>Ottenimento certificazione CE e Sicurezza</p>
                             </div>
                         </div>
                         <div class="step-item is-completed is-success">
@@ -216,10 +216,21 @@
                                 </span>
                             </div>
                             <div class="step-details">
+                                <p class="step-title">Prototipo</p>
+                                <p>Relizzazione prototipo funzionante</p>
+                            </div>
+                        </div>
+                        <!-- <div class="step-item is-completed is-success">
+                            <div class="step-marker">
+                                <span class="icon">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                            </div>
+                            <div class="step-details">
                                 <p class="step-title">Prevendita</p>
                                 <p>Avviamento della campagna di prevendita</p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                 </div>
