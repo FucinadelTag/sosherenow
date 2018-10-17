@@ -198,7 +198,7 @@
                 </span>
             </div>
             <div class="column is-two-fifths timeline">
-                <span class="title is-4">I prossimi sviluppi</span>
+                <span class="title is-4">I prossimi sviluppi:</span>
                 <header class="timeline-header">
                     <span class="tag is-medium is-primary">Prevendita</span>
                 </header>
@@ -234,7 +234,7 @@
                     </div>
                 </div>
                 <div class="timeline-header">
-                    <span class="tag is-medium is-primary">Spedizione   </span>
+                    <span class="tag is-medium is-primary">Spedizione</span>
                 </div>
             </div>
         </div>
