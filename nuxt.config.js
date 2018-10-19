@@ -57,6 +57,9 @@ module.exports = {
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
+  env: {
+    dataset: process.env.DATASET || 'dev'
+  },
 
   /*
   ** Build configuration

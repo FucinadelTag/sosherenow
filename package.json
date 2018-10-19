@@ -13,9 +13,12 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "@nuxtjs/bulma": "^1.2.0",
+    "@sanity/client": "^0.135.0",
+    "@sanity/image-url": "^0.135.0",
     "bulma-steps": "^2.2.1",
     "bulma-timeline": "^3.0.0",
     "cross-env": "^5.2.0",
+    "lodash": "^4.17.11",
     "node-sass": "^4.9.3",
     "nuxt": "^2.0.0",
     "nuxt-sass-resources-loader": "^2.0.5",

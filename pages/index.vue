@@ -1,20 +1,29 @@
 <template>
     <span>
         <section class="hero is-medium has-bg-img is-hidden-mobile">
-            <div class="hero-body" style="background: url(https://placehold.it/1000x500?text=.); background-position: center; background-size:cover;">
+            <div class="hero-body" v-bind:style="testataStyle">
                 <div class="container">
-                    <h1 class="title is-1">Quando hai bosogno di aiuto</h1>
-                    <h2 class="subtitle">Renditi visibile, sempre!</h2>
+                    <h1 class="title is-1">{{testata.riga1.it}}</h1>
+                    <h2 class="subtitle">{{testata.riga2.it}}</h2>
                 </div>
             </div>
         </section>
 
         <div class="spazio_bianco"></div>
 
-        <div class="has-text-centered">
-            <p class="title is-1">Un pallone per salvare una vita</p>
-            <p class="title is-2">Un semplice segnale per chiedere aiuto</p>
-        </div>
+        <span itemprop="landigBody" v-for="(contenuto, key, index) in contenuti" :key="id">
+
+            <banner v-if="contenuto._type == 'banner'"  v-bind:contenuto="contenuto" v-bind:indice="key" />
+
+            <!-- <sliceCollection v-if="slice.slice_type == 'collection'"  v-bind:collection="slice" v-bind:indice="key" />
+
+            <sliceCollectionContenuti v-if="slice.slice_type == 'collection_contenuti'"  v-bind:collectionContenuti="slice" v-bind:indice="key" />
+
+            <sliceBanner v-if="slice.slice_type == 'banner'"  v-bind:banner="slice" v-bind:indice="key" />
+
+            <sliceIncludes v-if="slice.slice_type == 'include'"  v-bind:include="slice" v-bind:indice="key" /> -->
+
+        </span>
 
         <div class="spazio_bianco"></div>
 
@@ -373,8 +382,43 @@
 </template>
 
 <script>
+import {getImageBuilder} from '~/tools/sanity.js'
+import banner from '~/components/Banner.vue'
 
 export default {
+    middleware: 'getLandingPage',
+    components: {
+        banner
+    },
+    data (context) {
+        //console.log(this.$store);
+        return {
+            testata: this.$store.getters['landing/getTestata'],
+            metadata: this.$store.getters['landing/getMetadata'],
+            contenuti: this.$store.getters['landing/getContenuti'],
+            id: this.$store.getters['landing/getId'],
+            context: context
+        }
+    },
+    computed: {
+        // a computed getter
+        testataStyle: function () {
+            let imageBuilder = getImageBuilder('dev')
+            //console.log(imageBuilder.image(this.landing.testata.immagine).width(1000).url());
+            let immagineUrl = imageBuilder.image(this.testata.immagine).width(1000).url();
+            let styleString = `background: url(${immagineUrl}) center no-repeat; background-size: cover;`
+            return styleString;
+        }
+    },
+    head () {
+        return {
+            title:  this.metadata.title.it != null ? this.metadata.title.it : 'Prova',
+            meta: [
+                { hid: 'description', name: 'description', content: this.metadata.description.it != null ? this.metadata.description.it : 'this.mainDescription' }
+            ]
+        }
+    }
+
 }
 </script>
 
