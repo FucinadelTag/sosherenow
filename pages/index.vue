@@ -3,8 +3,8 @@
         <section class="hero is-medium has-bg-img is-hidden-mobile">
             <div class="hero-body" v-bind:style="testataStyle">
                 <div class="container">
-                    <h1 class="title is-1">{{testata.riga1.it}}</h1>
-                    <h2 class="subtitle">{{testata.riga2.it}}</h2>
+                    <h1 class="title is-1">{{$t(testata.riga1)}}</h1>
+                    <h2 class="subtitle">{{$t(testata.riga2)}}</h2>
                 </div>
             </div>
         </section>
@@ -14,6 +14,8 @@
         <span itemprop="landigBody" v-for="(contenuto, key, index) in contenuti" :key="id">
 
             <banner v-if="contenuto._type == 'banner'"  v-bind:contenuto="contenuto" v-bind:indice="key" />
+
+            <contenutoRipetibile v-if="contenuto._type == 'contenutoRipetibile'"  v-bind:contenuto="contenuto" v-bind:indice="key" />
 
             <!-- <sliceCollection v-if="slice.slice_type == 'collection'"  v-bind:collection="slice" v-bind:indice="key" />
 
@@ -353,11 +355,11 @@
                 </p>
                 <p>
                     Per produrre SOS HERE NOW dobbiamo sostenere costi per:
-                    <ul>
-                        <li>Realizzazione stampi per parti in plastica</li>
-                        <li>Acquisto delle materie prime</li>
-                    </ul>
                 </p>
+                <ul>
+                    <li>Realizzazione stampi per parti in plastica</li>
+                    <li>Acquisto delle materie prime</li>
+                </ul>
             </div>
             <div class="column is-half">
                 <p>
@@ -384,11 +386,13 @@
 <script>
 import {getImageBuilder} from '~/tools/sanity.js'
 import banner from '~/components/Banner.vue'
+import contenutoRipetibile from '~/components/contenutoRipetibile.vue'
 
 export default {
     middleware: 'getLandingPage',
     components: {
-        banner
+        banner,
+        contenutoRipetibile
     },
     data (context) {
         //console.log(this.$store);
@@ -412,9 +416,9 @@ export default {
     },
     head () {
         return {
-            title:  this.metadata.title.it != null ? this.metadata.title.it : 'Prova',
+            title:  this.$t(this.metadata.title) != null ? this.$t(this.metadata.title) : 'Prova',
             meta: [
-                { hid: 'description', name: 'description', content: this.metadata.description.it != null ? this.metadata.description.it : 'this.mainDescription' }
+                { hid: 'description', name: 'description', content: this.$t(this.metadata.description) != null ? this.$t(this.metadata.description) : 'this.mainDescription' }
             ]
         }
     }

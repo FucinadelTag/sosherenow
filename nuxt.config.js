@@ -31,6 +31,7 @@ module.exports = {
   */
   plugins: [
       { src: '~plugins/iconFonts.js', ssr: false },
+      { src: '~plugins/fdtI18n.js', ssr: true },
   ],
 
   /*

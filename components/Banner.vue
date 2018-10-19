@@ -1,8 +1,8 @@
 <template lang="html">
     <section>
         <div class="has-text-centered">
-            <p class="title is-1">{{contenuto.riga1.it}}</p>
-            <p class="title is-2">{{contenuto.riga2.it}}</p>
+            <p class="title is-1">{{$t(contenuto.riga1)}}</p>
+            <p class="title is-2">{{$t(contenuto.riga2)}}</p>
         </div>
     </section>
 
