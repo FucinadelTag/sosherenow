@@ -1,6 +1,7 @@
-export default ({ app }, inject) => {
+export default ({ app, store }, inject) => {
   inject('t', (string) => {
-      return string.it
+      let locale = (store.getters.getLocale);
+      return string[locale]
   })
 }
 

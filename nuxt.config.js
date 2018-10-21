@@ -61,6 +61,9 @@ module.exports = {
   env: {
     dataset: process.env.DATASET || 'dev'
   },
+  router: {
+      middleware: ['I18N']
+  },
 
   /*
   ** Build configuration

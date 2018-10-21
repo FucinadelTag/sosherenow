@@ -56,41 +56,28 @@ const manageReferences = async function (landing, dataset) {
 export default async function (context) {
 
     let dataset = context.env.dataset;
+    let landing = null;
 
-    if (context.route.path == '/') {
+    if (context.route.params.slug === undefined) {
 
-        let landing  = await getLanding ('home-page', dataset, context.error);
+        landing  = await getLanding ('home-page', dataset, context.error);
 
-        let landingOk = await manageReferences(landing[0], dataset);
+    } else {
 
-        console.log(landingOk);
+        landing  = await getLanding (context.route.params.slug, dataset, context.error);
+    }
 
-        if (typeof landing != 'undefined'){
+    let landingOk = await manageReferences(landing[0], dataset);
+
+    //console.log(landingOk);
+
+
+    if (typeof landing != 'undefined'){
             context.store.commit('landing/SET_DATA', landingOk);
-        }
-
-
-
-
-        //getLanding ('home-page', store);
     }
 
 
 
 
-
-
-
-
-    // let landing  = await getLandingPage (slug);
-    //
-    // if (typeof landing != 'undefined'){
-    //     let prodotti = await getProdottiMap (landing);
-    //     //console.log(prodotti);
-    //     store.commit('landing/SET_DATA', landing);
-    // }
-
-
-
-
+        //getLanding ('home-page', store);
 }
