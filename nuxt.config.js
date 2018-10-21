@@ -34,53 +34,64 @@ module.exports = {
       { src: '~plugins/fdtI18n.js', ssr: true },
   ],
 
-  /*
-  ** Nuxt.js modules
-  */
-  modules: [
+    /*
+    ** Nuxt.js modules
+    */
+    modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
-    ['nuxt-sass-resources-loader',
-        [
-            './assets/scss/variables.scss'
+        ['nuxt-sass-resources-loader',
+            [
+                './assets/scss/variables.scss'
+            ]
         ]
-    ]
-  ],
-  /*
-  ** Global CSS
-  */
-  css: [
-      {src: '~/assets/scss/main.scss', lang: 'scss'}
-  ],
-  /*
-  ** Axios module configuration
-  */
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
-  },
-  env: {
-    dataset: process.env.DATASET || 'dev'
-  },
-  router: {
-      middleware: ['I18N']
-  },
-
-  /*
-  ** Build configuration
-  */
-  build: {
-    postcss: {
-      preset: {
-        features: {
-          customProperties: false
-        }
-      }
-    },
+    ],
     /*
-    ** You can extend webpack config here
+    ** Global CSS
     */
-    extend(config, ctx) {
+    css: [
+        {src: '~/assets/scss/main.scss', lang: 'scss'}
+    ],
+    /*
+    ** Axios module configuration
+    */
+    axios: {
+      // See https://github.com/nuxt-community/axios-module#options
+    },
+    env: {
+      dataset: process.env.DATASET || 'dev'
+    },
+    router: {
+        middleware: ['I18N']
+    },
+    render: {
+        bundleRenderer: {
+            shouldPreload: (file, type) => {
+                return ['script', 'style', 'font'].includes(type)
+            }
+        }
+    },
 
-    }
-  }
+    /*
+    ** Build configuration
+    */
+    build: {
+        postcss: {
+            preset: {
+                features: {
+                    customProperties: false
+                }
+            }
+        },
+        /*
+        ** You can extend webpack config here
+        */
+        extend(config, ctx) {
+
+        }
+    },
+    performance: {
+        gzip: false
+    },
+    dev: false
 }

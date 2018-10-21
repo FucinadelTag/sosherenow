@@ -8,13 +8,15 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy": "npm run build && sls deploy --stage production"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "@nuxtjs/bulma": "^1.2.0",
     "@sanity/client": "^0.135.0",
     "@sanity/image-url": "^0.135.0",
+    "aws-serverless-express": "^3.3.5",
     "bulma-steps": "^2.2.1",
     "bulma-timeline": "^3.0.0",
     "cross-env": "^5.2.0",
@@ -22,7 +24,9 @@
     "node-sass": "^4.9.3",
     "nuxt": "^2.0.0",
     "nuxt-sass-resources-loader": "^2.0.5",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "serverless-apigw-binary": "^0.4.4",
+    "serverless-offline": "^3.28.0"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
