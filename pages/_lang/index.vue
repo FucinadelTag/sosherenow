@@ -15,6 +15,8 @@
 
             <banner v-if="contenuto._type == 'banner'"  v-bind:contenuto="contenuto" v-bind:indice="key" />
 
+            <div class="spazio_bianco"></div>
+
             <contenutoRipetibile v-if="contenuto._type == 'contenutoRipetibile'"  v-bind:contenuto="contenuto" v-bind:indice="key" />
 
             <!-- <sliceCollection v-if="slice.slice_type == 'collection'"  v-bind:collection="slice" v-bind:indice="key" />
@@ -29,7 +31,7 @@
 
         <div class="spazio_bianco"></div>
 
-        <div  class="box columns">
+        <!-- <div  class="box columns">
             <div class="column">
                 <p>
                     <span class="title is-4">E' subito visibile</span>
@@ -48,7 +50,7 @@
                 </p>
                 <img src="https://placehold.it/500x500?text=Immagine scritta SOS" alt="Scritta SOS" />
             </div>
-        </div>
+        </div> -->
 
         <div class="spazio_bianco"></div>
 
@@ -386,7 +388,7 @@
 <script>
 import {getImageBuilder} from '~/tools/sanity.js'
 import banner from '~/components/Banner.vue'
-import contenutoRipetibile from '~/components/contenutoRipetibile.vue'
+import contenutoRipetibile from '~/components/contenuti/contenutoRipetibile.vue'
 
 export default {
     middleware: 'getLandingPage',

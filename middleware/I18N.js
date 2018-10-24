@@ -30,8 +30,5 @@ export default function (context) {
         context.store.commit('SET_LOCALE', locale)
     }
 
-
-
-
         //getLanding ('home-page', store);
 }

@@ -1,5 +1,9 @@
 const sanityClient = require('@sanity/client')
+const blocksToHtml = require('@sanity/block-content-to-html')
+const h = blocksToHtml.h
+
 import imageUrlBuilder from '@sanity/image-url'
+
 
 const getSanityClient = function (dataset) {
 
@@ -26,4 +30,29 @@ const getImageBuilder = function (dataset) {
 
 }
 
-export {getSanityClient, getImageBuilder, getByContenutoId};
+const serializers = {
+    types: {
+        block: props => {
+            return (
+                  h('p', [
+                    h('p', null, props.children)
+                  ])
+                )
+
+        }
+    }
+}
+
+const getBlockHtml = function (input) {
+
+    console.log(input);
+
+    const content = blocksToHtml({
+        blocks: input
+    })
+
+    return content;
+
+}
+
+export {getSanityClient, getImageBuilder, getByContenutoId, getBlockHtml};
