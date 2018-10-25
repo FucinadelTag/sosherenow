@@ -23,8 +23,16 @@ export default {
         // a computed getter
         getImage: function () {
             let imageBuilder = getImageBuilder('dev')
+
+            let width = 1000;
+            let height = 500;
+
+            if (this.contenuto.immagine.presentazione == 'quadrata'){
+                width = 500;
+            }
+
             //console.log(imageBuilder.image(this.landing.testata.immagine).width(1000).url());
-            let immagineUrl = imageBuilder.image(this.contenuto.immagine).width(500).height(500).url();
+            let immagineUrl = imageBuilder.image(this.contenuto.immagine).width(width).height(height).url();
             return immagineUrl;
         },
         getBlockHtml: function () {

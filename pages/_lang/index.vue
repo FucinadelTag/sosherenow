@@ -15,8 +15,6 @@
 
             <banner v-if="contenuto._type == 'banner'"  v-bind:contenuto="contenuto" v-bind:indice="key" />
 
-            <div class="spazio_bianco"></div>
-
             <contenutoRipetibile v-if="contenuto._type == 'contenutoRipetibile'"  v-bind:contenuto="contenuto" v-bind:indice="key" />
 
             <!-- <sliceCollection v-if="slice.slice_type == 'collection'"  v-bind:collection="slice" v-bind:indice="key" />
@@ -28,8 +26,6 @@
             <sliceIncludes v-if="slice.slice_type == 'include'"  v-bind:include="slice" v-bind:indice="key" /> -->
 
         </span>
-
-        <div class="spazio_bianco"></div>
 
         <!-- <div  class="box columns">
             <div class="column">
