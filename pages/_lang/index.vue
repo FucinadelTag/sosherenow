@@ -48,59 +48,6 @@
             </div>
         </div> -->
 
-        <div class="spazio_bianco"></div>
-
-        <h2 class="title is-2"><i class="fas fa-users"></i> Nei luoghi affollati</h2>
-
-        <div  class="box columns vendiamo">
-            <div class="column content is-6">
-                <p>
-                    <span class="title is-4">Il problema:</span>
-                </p>
-
-                <p>
-                    Per i soccorritori è difficile individuare velocemente da chi sono stati chiamati se si è in un lugo affollato. Durante un concerto, in una piazza affollata di turisti
-                    o in un mercato rionale, spesso ci vuole qualche minuto per individuare il luogo esatto dove si trova la persona bisognosa di aiuto.
-                </p>
-                <p>
-                    <span class="title is-4">La soluzione:</span>
-                </p>
-                <p>
-                    SOS HERE NOW permette di segnalare il punto esatto dove c'è bisogno di aiuto! Spesso salvare una vita è questione di attimi, SOS HERE NOW ti permette di non predere tempo.
-                </p>
-            </div>
-            <div class="column">
-                <img src="https://placehold.it/700x350?text=Luoghi affollati" alt="Luoghi affollati" />
-            </div>
-
-        </div>
-
-        <div class="spazio_bianco"></div>
-
-        <h2 class="title is-2"><i class="fas fa-car-crash"></i> In auto</h2>
-
-        <div  class="box columns vendiamo">
-            <div class="column">
-                <img src="https://placehold.it/700x350?text=In auto" alt="In auto" />
-            </div>
-
-            <div class="column content is-6">
-                <p>
-                    <span class="title is-4">Il problema:</span>
-                </p>
-                <p>
-                    Fermarsi a bordo strada con la macchina in panne è pericoloso. Da qui l'obbligo del trianglo a terra per segnalare la propria presnza sulla strada.
-                    In caso di traffico intenso è molto facile NON vedere il segnale a terra e procedere pericolosamente.
-                </p>
-                <p>
-                    <span class="title is-4">La soluzione:</span>
-                </p>
-                <p>
-                    Con SOS HERE NOW tutti sapranno che la tua auto è in panne davanti a loro, evitando il rischio di giungere verso di te in modo pericoloso.
-                </p>
-            </div>
-
-        </div>
 
         <div class="spazio_bianco"></div>
         <h2 class="title is-2"><i class="fas fa-mountain"></i> In montagna</h2>
@@ -149,39 +96,6 @@
                 </p>
             </div>
 
-        </div>
-
-        <div class="spazio_bianco"></div>
-        <h2 class="title is-2"><i class="fas fa-medkit"></i> Quando hai bisogno di aiuto</h2>
-
-        <div  class="box columns">
-            <div class="column">
-                <p>
-                    <span class="title is-4">Prendi SOS Here Now</span>
-                </p>
-                <img src="https://placehold.it/500x500?text=Immagine" alt="" />
-                <p>
-                    <strong>SOS Here now</strong> pesa poco più di un chilo e può essere tenuto con una mano
-                </p>
-            </div>
-            <div class="column">
-                <p>
-                    <span class="title is-4">Ruota la maniglia sul fondo</span>
-                </p>
-                <img src="https://placehold.it/500x500?text=Immagine" alt="" />
-                <p>
-                    Ruotando la maniglia il pallone incomincerà a gonfiarsi e la luce al suo interno si accenderò
-                </p>
-            </div>
-            <div class="column">
-                <p>
-                    <span class="title is-4">Attendi i soccorsi</span>
-                </p>
-                <img src="https://placehold.it/500x500?text=Immagine" alt="" />
-                <p>
-                    Il pallone salirà ad una altezza di 3 metri indicando la tua posizione
-                </p>
-            </div>
         </div>
 
         <div class="spazio_bianco"></div>

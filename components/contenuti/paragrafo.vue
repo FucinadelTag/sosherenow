@@ -1,15 +1,30 @@
 <template lang="html">
-    <span v-if="contenuto.posizioneImmagine == 'dopo_titolo'">
-        <p v-if="contenuto.titolo">
-            <span class="title is-4">{{$t(contenuto.titolo)}}</span>
-        </p>
-        <img v-bind:src="getImage" alt="Subito visibile" />
-        <span v-if="contenuto.testo" v-html="getBlockHtml" />
-        <!-- <pre v-if="contenuto.testo">
-            {{$t(contenuto.testo)}}
-        </pre> -->
+    <section>
+        <span v-if="contenuto.posizioneImmagine == 'dopo_titolo'">
+            <p v-if="contenuto.titolo">
+                <span class="title is-4">{{$t(contenuto.titolo)}}</span>
+            </p>
+            <img v-bind:src="getImage" alt="Subito visibile" />
+            <span v-if="contenuto.testo" v-html="getBlockHtml" />
+            <!-- <pre v-if="contenuto.testo">
+                {{$t(contenuto.testo)}}
+            </pre> -->
 
-    </span>
+        </span>
+
+        <span v-if="contenuto.posizioneImmagine == 'nessuna'">
+            <p v-if="contenuto.titolo">
+                <span class="title is-4">{{$t(contenuto.titolo)}}</span>
+            </p>
+            <span v-if="contenuto.testo" v-html="getBlockHtml" />
+            <!-- <pre v-if="contenuto.testo">
+                {{$t(contenuto.testo)}}
+            </pre> -->
+
+        </span>
+
+    </section>
+
 
 </template>
 
