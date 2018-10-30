@@ -23,6 +23,8 @@
 
                 <contenutoRipetibile v-if="contenuto._type == 'contenutoRipetibile'"  v-bind:contenuto="contenuto" v-bind:indice="key" />
 
+                <componentInclude v-if="contenuto._type == 'componentInclude'"  v-bind:contenuto="contenuto" v-bind:indice="key" />
+
             </span>
 
 
@@ -217,12 +219,14 @@
 import {getImageBuilder} from '~/tools/sanity.js'
 import banner from '~/components/Banner.vue'
 import contenutoRipetibile from '~/components/contenuti/contenutoRipetibile.vue'
+import componentInclude from '~/components/contenuti/componentInclude.vue'
 
 export default {
     middleware: 'getLandingPage',
     components: {
         banner,
-        contenutoRipetibile
+        contenutoRipetibile,
+        componentInclude
     },
     data (context) {
         //console.log(this.$store);
