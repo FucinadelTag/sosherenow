@@ -1,13 +1,11 @@
 <template>
     <div class="default">
-        <div class="container">
             <div class="content">
                 <div class="">
                     <MyMenu/>
                     <nuxt/>
                 </div>
             </div>
-        </div>
     </div>
 </template>
 

@@ -40,6 +40,11 @@ export default {
                 width = 500;
             }
 
+            if (this.contenuto.immagine.presentazione == 'verticale'){
+                height = 800;
+                width = null;
+            }
+
             //console.log(imageBuilder.image(this.landing.testata.immagine).width(1000).url());
             let immagineUrl = imageBuilder.image(this.contenuto.immagine).width(width).height(height).url();
             return immagineUrl;

@@ -46,6 +46,13 @@ export default {
                 width = 500;
             }
 
+            console.log(this.contenuto.immagine.presentazione);
+
+            if (this.contenuto.immagine.presentazione == 'verticale'){
+                height = 1000;
+                width = 500;
+            }
+
             //console.log(imageBuilder.image(this.landing.testata.immagine).width(1000).url());
             let immagineUrl = imageBuilder.image(this.contenuto.immagine).width(width).height(height).url();
             return immagineUrl;

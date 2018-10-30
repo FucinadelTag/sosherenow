@@ -1,8 +1,9 @@
 <template lang="html">
     <section>
         <div class="has-text-centered">
-            <p class="title is-1">{{$t(contenuto.riga1)}}</p>
-            <p class="title is-2">{{$t(contenuto.riga2)}}</p>
+            <span class="title is-1">{{$t(contenuto.riga1)}}</span>
+            <br>
+            <span class="title is-2">{{$t(contenuto.riga2)}}</span>
         </div>
     </section>
 
@@ -16,4 +17,5 @@ export default {
 </script>
 
 <style lang="scss">
+
 </style>
