@@ -17,7 +17,7 @@
 
             <div class="spazio_bianco"></div>
 
-            <span itemprop="landigBody" v-for="(contenuto, key, index) in contenuti" :key="id">
+            <span itemprop="landigBody" v-if="contenuti.length" v-for="(contenuto, key, index) in contenuti" :key="id">
 
                 <banner v-if="contenuto._type == 'banner'"  v-bind:contenuto="contenuto" v-bind:indice="key" />
 

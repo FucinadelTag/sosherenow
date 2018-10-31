@@ -13,42 +13,33 @@
                 <div class="columns">
                     <div class="column content">
                         <p class="title is-4">
-                            Chi Siamo
+                            Comments
                         </p>
-                        <p>
-                            Solede è una giovane realtà nata nel 2015 allo scopo di diffondere la cultura della prevenzione attraverso la diffusione di strumenti elettronici di facile utilizzo.
-                        </p>
-                        <p>
-                            Unitamente ad un grosso lavoro di formazione e culturale, cerchiamo di rendere disponibili al grande pubblico degli strumenti di monitoraggio della propria salute.
-                        </p>
-                        <p>
-                            Avvalendosi della consulenza di medici affermati e professionisti del soccorso, Solede propone al proprio pubblico strumenti semplici e funzionali a prezzi competitivi
-                        </p>
-
-
-
-                        </p>
+                        <section class="">
+                            <section id="disqus_thread"></section>
+                            <vue-disqus shortname="www-sosherenow-it" v-bind:identifier="getIdentifier" v-bind:url="getAbsoluteUrl"></vue-disqus>
+                        </section>
                     </div>
                     <div id="form" class="column">
                         <p class="title is-4">
-                            Contattaci
+                            Contact Us
                         </p>
                         <p class="subtitle is-6">
                             Scrivici un messaggio e ti risponderemo il prima possibile.
                         </p>
                         <section>
-                            <form accept-charset="UTF-8" action="https://formkeep.com/f/d5d9ebc89681" method="POST">
+                            <form v-on:submit.prevent ="submitForm($event)">
                                 <input type="hidden" id="url_redirect" name="url_redirect" value="https://www.solede.com/grazie">
                                 <div class="field">
                                     <label class="label is-small">Email:</label>
                                     <p class="control">
-                                        <input required class="input" type="email" name="email" placeholder="Email">
+                                        <input required class="input" v-model="email" type="email" name="email" placeholder="Email" required>
                                     </p>
                                 </div>
                                 <div class="field">
                                     <label class="label is-small">Messaggio:</label>
                                     <p class="control">
-                                        <textarea required class="textarea" name="messaggio" placeholder="Messaggio"></textarea>
+                                        <textarea required class="textarea" v-model="message" name="message" placeholder="Messaggio"></textarea>
                                     </p>
                                 </div>
                                 <div class="control has-text-centered">
@@ -85,6 +76,7 @@
 
 <script charset="utf-8">
     import MyMenu from '~/components/MyMenu.vue'
+    import axios from 'axios'
 
     export default {
         components: {
@@ -93,8 +85,54 @@
         data (context) {
             //console.log(this.$store);
             return {
+                lang: this.$store.getters.getLocale,
                 title: 'Sos Here Now',
-                description: 'Prova'
+                description: 'Prova',
+                email:'',
+                message:''
+            }
+        },
+        computed: {
+            // a computed getter
+            getIdentifier: function () {
+
+                return 'sos-here-now';
+            },
+            getAbsoluteUrl: function () {
+
+                return 'https://www.sosherenow.it/';
+            }
+        },
+        methods: {
+            submitForm: function (e) {
+                //let item = prepareItem (this.prodotto);
+                let actionUrl = "https://hooks.zapier.com/hooks/catch/178342/em1xqq/";
+
+                // const store = this.$store;
+                var self = this;
+                //
+                axios.post(actionUrl, {
+                    email: this.email,
+                    message: this.message,
+                }, {
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    }
+                })
+                .then(function (response) {
+                    console.log(response);
+                    window.location.href = '/'+ self.lang +'/grazie-contatto';
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+                //
+                // ga('send', {
+                //     hitType: 'event',
+                //     eventCategory: 'Cart',
+                //     eventAction: 'add'
+                // });
+
             }
         },
         head () {

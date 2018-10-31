@@ -21,6 +21,7 @@ export default function (context) {
             locale = locale
         }else {
             locale = context.store.getters.getLocale;
+
             return (
 
                 context.redirect(301, '/' + locale)

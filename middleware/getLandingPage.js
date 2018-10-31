@@ -21,6 +21,10 @@ const manageReferences = async function (landing, dataset) {
     let landingOk = landing;
     let loop = 0;
 
+    if (landing.contenuti === undefined){
+        return landingOk;
+    }
+
     for (const contenuto of landing.contenuti) {
         if (contenuto._type != 'paragrafo') {
             let contenutoOk = await getByContenutoId(dataset, contenuto._ref);
