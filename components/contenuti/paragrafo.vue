@@ -1,14 +1,30 @@
 <template lang="html">
     <section>
+        <span v-if="contenuto.posizioneImmagine == 'sopra'">
+            <immagineTmpl  v-bind:immagine="contenuto.immagine" />
+            <p v-if="contenuto.titolo">
+                <span class="title is-4">{{$t(contenuto.titolo)}}</span>
+            </p>
+            <span v-if="contenuto.testo" v-html="getBlockHtml" />
+
+        </span>
+
+        <span v-if="contenuto.posizioneImmagine == 'sotto'">
+            <p v-if="contenuto.titolo">
+                <span class="title is-4">{{$t(contenuto.titolo)}}</span>
+            </p>
+            <span v-if="contenuto.testo" v-html="getBlockHtml" />
+
+            <immagineTmpl  v-bind:immagine="contenuto.immagine" />
+
+        </span>
+
         <span v-if="contenuto.posizioneImmagine == 'dopo_titolo'">
             <p v-if="contenuto.titolo">
                 <span class="title is-4">{{$t(contenuto.titolo)}}</span>
             </p>
-            <img v-bind:src="getImage" alt="Subito visibile" />
+            <immagineTmpl  v-bind:immagine="contenuto.immagine" />
             <span v-if="contenuto.testo" v-html="getBlockHtml" />
-            <!-- <pre v-if="contenuto.testo">
-                {{$t(contenuto.testo)}}
-            </pre> -->
 
         </span>
 
@@ -17,9 +33,6 @@
                 <span class="title is-4">{{$t(contenuto.titolo)}}</span>
             </p>
             <span v-if="contenuto.testo" v-html="getBlockHtml" />
-            <!-- <pre v-if="contenuto.testo">
-                {{$t(contenuto.testo)}}
-            </pre> -->
 
         </span>
 
@@ -29,34 +42,16 @@
 </template>
 
 <script>
-import {getImageBuilder, getBlockHtml} from '~/tools/sanity.js'
+import {getBlockHtml} from '~/tools/sanity.js'
 import myMarked from 'marked';
+import immagineTmpl from '~/components/immagine.vue'
 
 export default {
     props: ['contenuto'],
+    components: {
+        immagineTmpl
+    },
     computed: {
-        // a computed getter
-        getImage: function () {
-            let imageBuilder = getImageBuilder('dev')
-
-            let width = 1000;
-            let height = 500;
-
-            if (this.contenuto.immagine.presentazione == 'quadrata'){
-                width = 500;
-            }
-
-            console.log(this.contenuto.immagine.presentazione);
-
-            if (this.contenuto.immagine.presentazione == 'verticale'){
-                height = 1000;
-                width = 500;
-            }
-
-            //console.log(imageBuilder.image(this.landing.testata.immagine).width(1000).url());
-            let immagineUrl = imageBuilder.image(this.contenuto.immagine).width(width).height(height).url();
-            return immagineUrl;
-        },
         getBlockHtml: function () {
             let testo = this.$t(this.contenuto.testo);
 

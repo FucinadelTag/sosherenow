@@ -4,7 +4,7 @@
             {{contenuto}}
         </pre> -->
         <div  class="box columns is-multiline">
-            <div class="column" v-for="(contenutoParagrafo, key, index) in contenuto.contenuti">
+            <div class="column is-half" v-for="(contenutoParagrafo, key, index) in contenuto.contenuti">
                 <paragrafo  v-bind:contenuto="contenutoParagrafo" />
             </div>
         </div>

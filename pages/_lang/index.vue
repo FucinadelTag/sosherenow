@@ -146,7 +146,7 @@
 
 
 
-            <div class="spazio_bianco"></div>
+            <!-- <div class="spazio_bianco"></div>
 
             <h2 class="title is-2"><i class="fas fa-shopping-cart"></i> Acquista oggi SOS HERE NOW</h2>
             <div  class="box columns">
@@ -163,52 +163,8 @@
                 <div class="column">
                     DA inserire: BOTTONE per carrello - Prezzi ecc..
                 </div>
-            </div>
+            </div> -->
 
-
-
-            <div class="spazio_bianco"></div>
-
-            <h2 class="title is-2"><i class="fas fa-question"></i> Le risposte alle tue domande</h2>
-
-            <div  class="box columns is-multiline">
-                <div class="column is-half">
-                    <p>
-                        <span class="title is-4">Quando spedirete il prodotto?</span>
-                    </p>
-                    <p>
-                        Il prodotto verrà spedito a <strong>Maggio del 2019</strong>
-                    </p>
-                </div>
-                <div class="column is-half">
-                    <p>
-                        <span class="title is-4">Perchè dobbiamo aspettare 6 mesi?</span>
-                    </p>
-                    <p>
-                        Per produrre SOS HERE NOW dobbiamo sostenere costi per:
-                    </p>
-                    <ul>
-                        <li>Realizzazione stampi per parti in plastica</li>
-                        <li>Acquisto delle materie prime</li>
-                    </ul>
-                </div>
-                <div class="column is-half">
-                    <p>
-                        <span class="title is-4">E se non riuscite a produrre, perdo i miei soldi?</span>
-                    </p>
-                    <p>
-                        <strong>NO</strong>, in caso di mancato raggiungimento del budget e quindi della possibilità di produrre SOS HERE NOW, restituiremo tutti i soldi raccolti nella fase di prevendita.
-                    </p>
-                </div>
-                <div class="column is-half">
-                    <p>
-                        <span class="title is-4">Di quanti soldi avete bisogno?</span>
-                    </p>
-                    <p>
-                        Ci servono circa <strong>100.000 Euro</strong> per essere pronti a spedire SOS HERE NOW. In caso di mancato raggiungimento di questa cifra, restituiremo tutti i soldi raccolti nella fase di prevendita.
-                    </p>
-                </div>
-            </div>
         </div>
 
 

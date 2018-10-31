@@ -28,4 +28,8 @@ export const getters = {
 
         return locales;
     },
+    getDafaultLocale: state => {
+
+        return 'it';
+    },
 }

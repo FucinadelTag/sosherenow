@@ -1,7 +1,7 @@
 <template lang="html">
-    <section>
+    <section class="banner">
         <div class="has-text-centered">
-            <span class="title is-2">Rimani informato sullo stato del progetto:</span>
+            <span class="title is-2 has-text-danger">In prevendita con il 50% di sconto da Gennaio 2019</span>
         </div>
         <br>
         <div class="columns is-centered">
@@ -17,13 +17,16 @@
                 </div>
                 <div class="field">
                     <div class="control has-text-centered">
-                        <button class="button is-primary">
-                            Tienimi informato
+                        <button class="button is-large is-warning">
+                            <i class="fas fa-envelope"></i>&nbsp;Avvisami quando inizia la Prevendita!
                         </button>
                     </div>
                 </div>
             </div>
 
+        </div>
+        <div class="has-text-centered">
+            <span class="subtitle is-4">Solo i primi 100 avranno diritto allo sconto del 50%</span>
         </div>
     </section>
 

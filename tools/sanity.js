@@ -45,7 +45,9 @@ const serializers = {
 
 const getBlockHtml = function (input) {
 
-    console.log(input);
+    if (input === undefined){
+        return null;
+    }
 
     const content = blocksToHtml({
         blocks: input
