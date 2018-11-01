@@ -15,10 +15,10 @@
                         <p class="title is-4">
                             Comments
                         </p>
-                        <section class="">
+                        <!-- <section class="">
                             <section id="disqus_thread"></section>
                             <vue-disqus shortname="www-sosherenow-it" v-bind:identifier="getIdentifier" v-bind:url="getAbsoluteUrl"></vue-disqus>
-                        </section>
+                        </section> -->
                     </div>
                     <div id="form" class="column">
                         <p class="title is-4">

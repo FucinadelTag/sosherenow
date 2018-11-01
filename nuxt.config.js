@@ -40,13 +40,26 @@ module.exports = {
     */
     modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios',
+        '@nuxtjs/google-gtag',
+        '@nuxtjs/axios',
         ['nuxt-sass-resources-loader',
             [
                 './assets/scss/variables.scss'
             ]
-        ]
+        ],
     ],
+
+    // example config
+    'google-gtag':{
+        id: 'UA-19846103-44', // required
+        config:{
+            anonymize_ip: true, // anonymize IP
+            send_page_view: true, // might be necessary to avoid duplicated page track on page reload
+        },
+        debug: true, // enable to track in dev mode
+        disableAutoPageTrack: false, // disable if you don't want to track each page route with router.afterEach(...)
+
+    },
     /*
     ** Global CSS
     */
