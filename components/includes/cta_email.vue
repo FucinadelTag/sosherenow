@@ -19,7 +19,7 @@
                     <div class="field">
                         <div class="control has-text-centered">
                             <button class="button is-large is-warning">
-                                <i class="fas fa-envelope"></i>&nbsp;Ricorami la Prevendita!
+                                <i class="fas fa-envelope"></i>&nbsp;Ricordami la Prevendita!
                             </button>
                         </div>
                     </div>
