@@ -16,8 +16,8 @@
                     </div>
                     <div class="navbar-menu">
                         <div class="navbar-end">
-                            <a class="navbar-item" href="/it">IT</a>
-                            <a class="navbar-item" href="/en">EN</a>
+                            <a class="navbar-item" href="/it">It</a>
+                            <a class="navbar-item" href="/en">En</a>
                         </div>
                     </div>
                 </nav>
