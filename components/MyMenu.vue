@@ -15,8 +15,9 @@
                         </button>
                     </div>
                     <div class="navbar-menu">
-                        <div class="navbar-start">
-                            <!-- <a v-for="item in menuItems" class="navbar-item" v-bind:href="item.link" v-bind:class="item.isActive">{{item.name}}</a> -->
+                        <div class="navbar-end">
+                            <a class="navbar-item" href="/it">IT</a>
+                            <a class="navbar-item" href="/en">EN</a>
                         </div>
                     </div>
                 </nav>
