@@ -22,10 +22,10 @@
                     </div>
                     <div id="form" class="column">
                         <p class="title is-4">
-                            Contact Us
+                            {{$t(traduzioni.contatti.contattaci)}}
                         </p>
                         <p class="subtitle is-6">
-                            Scrivici un messaggio e ti risponderemo il prima possibile.
+                            {{$t(traduzioni.contatti.scrivimessaggio)}}
                         </p>
                         <section>
                             <form v-on:submit.prevent ="submitForm($event)">
@@ -37,13 +37,13 @@
                                     </p>
                                 </div>
                                 <div class="field">
-                                    <label class="label is-small">Messaggio:</label>
+                                    <label class="label is-small">{{$t(traduzioni.contatti.messaggio)}}:</label>
                                     <p class="control">
-                                        <textarea required class="textarea" v-model="message" name="message" placeholder="Messaggio"></textarea>
+                                        <textarea required class="textarea" v-model="message" name="message" v-bind:placeholder="$t(traduzioni.contatti.messaggio)"></textarea>
                                     </p>
                                 </div>
                                 <div class="control has-text-centered">
-                                    <button class="button is-warning">Invia la tua richiesta!</button>
+                                    <button class="button is-warning">{{$t(traduzioni.contatti.inviarichiesta)}}</button>
                                 </div>
                             </form>
 
@@ -89,7 +89,8 @@
                 title: 'Sos Here Now',
                 description: 'Prova',
                 email:'',
-                message:''
+                message:'',
+                traduzioni: this.$store.getters['traduzioni/getTraduzioni'],
             }
         },
         computed: {

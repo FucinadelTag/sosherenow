@@ -76,7 +76,7 @@ module.exports = {
       dataset: process.env.DATASET || 'dev'
     },
     router: {
-        middleware: ['I18N']
+        middleware: ['I18N','getTraduzioni']
     },
     render: {
         bundleRenderer: {
