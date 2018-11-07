@@ -33,6 +33,7 @@ module.exports = {
       { src: '~plugins/iconFonts.js', ssr: false },
       { src: '~plugins/fdtI18n.js', ssr: true },
       { src: '~plugins/disqus.js', ssr: false },
+      { src: '~plugins/iubenda.js', ssr: false },
   ],
 
     /*

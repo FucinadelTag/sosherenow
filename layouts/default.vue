@@ -62,7 +62,7 @@
                         </div>
                         <br>
                         <div>
-                                <a href="/privacy" title="Privacy Policy">Privacy Policy</a>
+                                <a v-bind:href="getPrivacyUrl" title="Privacy Policy">Privacy Policy</a>
                         </div>
                     </div>
 
@@ -102,6 +102,10 @@
             getAbsoluteUrl: function () {
 
                 return 'https://www.sosherenow.it/';
+            },
+            getPrivacyUrl: function () {
+
+                return '/' + this.lang + '/privacy';
             }
         },
         methods: {
