@@ -4,7 +4,7 @@
             <div class="column">
                 <nav class="navbar myMenu" role="navigation" aria-label="main navigation">
                     <div class="navbar-brand">
-                        <a class="navbar-item" href="/">
+                        <a class="navbar-item" v-bind:href="getHomeUrl">
                             <img class="imglogo" src="/images/logo-menu.png" alt="SosHereNow.com">
                         </a>
 
@@ -37,10 +37,18 @@ export default {
     },
     data: function () {
         return {
+            lang: this.$store.getters.getLocale,
             menuItems: '',
             logo: ''
         }
-    }
+    },
+    computed: {
+        // a computed getter
+        getHomeUrl: function () {
+
+            return '/' + this.lang;
+        }
+    },
 }
 </script>
 
