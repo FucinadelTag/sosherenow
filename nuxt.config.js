@@ -34,6 +34,7 @@ module.exports = {
       { src: '~plugins/fdtI18n.js', ssr: true },
       { src: '~plugins/disqus.js', ssr: false },
       { src: '~plugins/iubenda.js', ssr: false },
+      { src: '~plugins/facebook.js', ssr: false },
   ],
 
     /*

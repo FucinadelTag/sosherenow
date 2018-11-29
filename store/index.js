@@ -1,6 +1,6 @@
 export const state = () => ({
     locales: ['it', 'en'],
-    locale: 'en',
+    locale: 'it',
 })
 
 
@@ -9,7 +9,7 @@ export const mutations = {
         if (state.locales.indexOf(locale) !== -1) {
             state.locale = locale
         }else {
-            state.locale = 'en'
+            state.locale = 'it'
         }
     }
 
@@ -30,6 +30,6 @@ export const getters = {
     },
     getDafaultLocale: state => {
 
-        return 'en';
+        return 'it';
     },
 }
