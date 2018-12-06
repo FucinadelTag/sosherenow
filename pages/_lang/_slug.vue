@@ -2,13 +2,9 @@
     <span>
         <section class="hero is-medium is-hidden-mobile">
             <div class="hero-body" v-bind:style="testataStyle">
-                <div class="container">
-                    <h1 class="title is-1">{{$t(testata.riga1)}}</h1>
+                <div v-bind:class="titoloStyle">
+                    <h1 class="title bianco is-1">{{$t(testata.riga1)}}</h1>
                     <h2 class="subtitle is-2">{{$t(testata.riga2)}}</h2>
-                    <p>
-                        <br><br><br><br>
-                    </p>
-
                 </div>
             </div>
         </section>
@@ -202,6 +198,10 @@ export default {
             let immagineUrl = imageBuilder.image(this.testata.immagine).width(1500).height(500).url();
             let styleString = `background: url(${immagineUrl}) center no-repeat; background-size: cover;`
             return styleString;
+        },
+        titoloStyle: function () {
+            console.log(this.testata.stileTestata);
+            return this.testata.stileTestata;
         }
     },
     head () {
@@ -216,5 +216,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+    .sfondo {
+        background-color: rgba(255,255,255,0.8);
+        letter-spacing: 1px;
+        padding: 2%;
+        display:inline-block;
+    }
 </style>
