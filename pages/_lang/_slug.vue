@@ -200,7 +200,6 @@ export default {
             return styleString;
         },
         titoloStyle: function () {
-            console.log(this.testata.stileTestata);
             return this.testata.stileTestata;
         }
     },
