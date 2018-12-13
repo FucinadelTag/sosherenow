@@ -15,6 +15,10 @@
                         </button>
                     </div>
                     <div class="navbar-menu">
+                        <div class="navbar-start">
+                            <a class="navbar-item" v-bind:href="getAffollatiUrl">{{$t(traduzioni.menu.luoghiaffollati)}}</a>
+                            <a class="navbar-item" v-bind:href="getBarcaUrl">{{$t(traduzioni.menu.inbarca)}}</a>
+                        </div>
                         <div class="navbar-end">
                             <a class="navbar-item" href="/it">It</a>
                             <a class="navbar-item" href="/en">En</a>
@@ -39,7 +43,8 @@ export default {
         return {
             lang: this.$store.getters.getLocale,
             menuItems: '',
-            logo: ''
+            logo: '',
+            traduzioni: this.$store.getters['traduzioni/getTraduzioni'],
         }
     },
     computed: {
@@ -47,6 +52,14 @@ export default {
         getHomeUrl: function () {
 
             return '/' + this.lang;
+        },
+        getAffollatiUrl: function () {
+
+            return '/' + this.lang + '/nei-luoghi-affollati';
+        },
+        getBarcaUrl: function () {
+
+            return '/' + this.lang + '/in-barca';
         }
     },
 }
