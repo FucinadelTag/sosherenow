@@ -5,6 +5,7 @@
 <script>
 import {getImageBuilder} from '~/tools/sanity.js'
 
+
 export default {
     props: ['immagine'],
     computed: {

@@ -16,6 +16,8 @@ const manageTraduzioni = function (traduzioni) {
 
     let traduzioniOk = {};
 
+
+
     _.forEach(traduzioni, function(traduzione, key) {
 
         let contenutiOk = {};
