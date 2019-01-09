@@ -28,7 +28,7 @@
 
         </span>
 
-        <span v-if="contenuto.posizioneImmagine == 'nessuna'">
+        <span v-if="(contenuto.posizioneImmagine == 'nessuna' || contenuto.posizioneImmagine == null)">
             <p v-if="contenuto.titolo">
                 <span class="title is-4">{{$t(contenuto.titolo)}}</span>
             </p>

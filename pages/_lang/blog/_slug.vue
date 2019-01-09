@@ -9,7 +9,7 @@
             <div class="column is-3 addthis_inline_share_toolbox"></div>
             <div class="column">
                 <span class="is-pulled-left">
-                    <dataArticolo v-bind:articolo="articolo"/>
+                    <dataArticoloTmpl v-bind:articolo="articolo"/>
                 </span>
 
             </div>
@@ -19,7 +19,7 @@
             <immagineTmpl  v-bind:immagine="articolo.immagine" />
         </figure>
 
-        <testoTmpl  v-bind:contenuto="articolo.testo" />
+        <i><testoTmpl  v-bind:contenuto="articolo.testo" /></i>
 
         <!-- <span itemprop="landigBody" v-if="contenuti.length" v-for="(contenuto, key, index) in contenuti" :key="id">
 
@@ -72,6 +72,7 @@
 import paragrafo from '~/components/contenuti/paragrafo.vue'
 import immagineTmpl from '~/components/immagine.vue'
 import testoTmpl from '~/components/contenuti/testoHtml.vue'
+import dataArticoloTmpl from '~/components/contenuti/dataArticolo.vue'
 import {getImageBuilder} from '~/tools/sanity.js'
 
 
@@ -103,7 +104,8 @@ export default {
     components: {
         paragrafo,
         immagineTmpl,
-        testoTmpl
+        testoTmpl,
+        dataArticoloTmpl
     },
     head () {
         return {

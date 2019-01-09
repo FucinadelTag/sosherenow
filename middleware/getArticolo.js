@@ -67,9 +67,6 @@ export default async function (context) {
 
     let articoloOk = await manageReferences(articolo[0], dataset);
 
-    console.log(articoloOk);
-
-
     if (typeof articolo != 'undefined'){
             context.store.commit('articoli/SET_ARTICOLO', articoloOk);
     }
