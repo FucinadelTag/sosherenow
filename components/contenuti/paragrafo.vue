@@ -5,7 +5,7 @@
             <p v-if="contenuto.titolo">
                 <span class="title is-4">{{$t(contenuto.titolo)}}</span>
             </p>
-            <span v-if="contenuto.testo" v-html="getBlockHtml" />
+            <testoTmpl  v-bind:contenuto="contenuto.testo" />
 
         </span>
 
@@ -13,7 +13,7 @@
             <p v-if="contenuto.titolo">
                 <span class="title is-4">{{$t(contenuto.titolo)}}</span>
             </p>
-            <span v-if="contenuto.testo" v-html="getBlockHtml" />
+            <testoTmpl  v-bind:contenuto="contenuto.testo" />
 
             <immagineTmpl  v-bind:immagine="contenuto.immagine" />
 
@@ -24,7 +24,7 @@
                 <span class="title is-4">{{$t(contenuto.titolo)}}</span>
             </p>
             <immagineTmpl  v-bind:immagine="contenuto.immagine" />
-            <span v-if="contenuto.testo" v-html="getBlockHtml" />
+            <testoTmpl  v-bind:contenuto="contenuto.testo" />
 
         </span>
 
@@ -32,8 +32,7 @@
             <p v-if="contenuto.titolo">
                 <span class="title is-4">{{$t(contenuto.titolo)}}</span>
             </p>
-            <span v-if="contenuto.testo" v-html="getBlockHtml" />
-
+            <testoTmpl  v-bind:contenuto="contenuto.testo" />
         </span>
 
     </section>
@@ -45,11 +44,13 @@
 import {getBlockHtml} from '~/tools/sanity.js'
 import myMarked from 'marked';
 import immagineTmpl from '~/components/immagine.vue'
+import testoTmpl from '~/components/contenuti/testoHtml.vue'
 
 export default {
     props: ['contenuto'],
     components: {
-        immagineTmpl
+        immagineTmpl,
+        testoTmpl
     },
     computed: {
         getBlockHtml: function () {
