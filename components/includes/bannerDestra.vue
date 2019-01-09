@@ -1,5 +1,5 @@
 <template lang="html">
-<a v-bind:href="home" v-on:click="bannerTrack()" target="_blank">
+<a href="/" v-on:click="bannerTrack()" target="_blank">
     <div class="box bannerDestra is-centered">
         <div class="logoPratiche has-text-centered">
             <img class="imglogo" src="/images/logo-menu.png" alt="SosHereNow.com">
