@@ -3,7 +3,7 @@
         <myMenu/>
 
         <section class="section">
-                <div class="content">
+                <div class="container">
                     <nuxt/>
                 </div>
         </section>

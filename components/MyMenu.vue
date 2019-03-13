@@ -1,36 +1,30 @@
 <template lang="html">
-    <div>
-        <div class="columns">
-            <div class="column">
-                <nav class="navbar myMenu" role="navigation" aria-label="main navigation">
-                    <div class="navbar-brand">
-                        <a class="navbar-item" v-bind:href="getHomeUrl">
-                            <img class="imglogo" src="/images/logo-menu.png" alt="SosHereNow.com">
-                        </a>
 
-                        <button class="button navbar-burger" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </div>
-                    <div class="navbar-menu">
-                        <div class="navbar-start">
-                            <a class="navbar-item" v-bind:href="getAffollatiUrl">{{$t(traduzioni.menu.luoghiaffollati)}}</a>
-                            <a class="navbar-item" v-bind:href="getBarcaUrl">{{$t(traduzioni.menu.inbarca)}}</a>
+                <nav class="navbar myMenu" role="navigation" aria-label="main navigation">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a class="navbar-item" v-bind:href="getHomeUrl">
+                                <img class="imglogo" src="/images/logo-menu.png" alt="SosHereNow.com">
+                            </a>
+
+                            <button class="button navbar-burger" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
                         </div>
-                        <div class="navbar-end">
-                            <a class="navbar-item" href="/it">It</a>
-                            <a class="navbar-item" href="/en">En</a>
+                        <div class="navbar-menu">
+                            <div class="navbar-start">
+                                <a class="navbar-item" v-bind:href="getAffollatiUrl">{{$t(traduzioni.menu.luoghiaffollati)}}</a>
+                                <a class="navbar-item" v-bind:href="getBarcaUrl">{{$t(traduzioni.menu.inbarca)}}</a>
+                            </div>
+                            <div class="navbar-end">
+                                <a class="navbar-item" href="/it">It</a>
+                                <a class="navbar-item" href="/en">En</a>
+                            </div>
                         </div>
                     </div>
                 </nav>
-            </div>
-
-        </div>
-
-
-    </div>
 
 </template>
 
