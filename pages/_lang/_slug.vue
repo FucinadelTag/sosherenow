@@ -63,13 +63,23 @@ export default {
         },
         titoloStyle: function () {
             return this.testata.stileTestata;
+        },
+        immagine_principale: function () {
+            let imageBuilder = getImageBuilder('dev')
+            //console.log(imageBuilder.image(this.landing.testata.immagine).width(1000).url());
+            let immagineUrl = imageBuilder.image(this.testata.immagine).width(1500).height(500).url();
+            return immagineUrl;
         }
     },
     head () {
         return {
             title:  this.$t(this.metadata.title) != null ? this.$t(this.metadata.title) : 'Prova',
             meta: [
-                { hid: 'description', name: 'description', content: this.$t(this.metadata.description) != null ? this.$t(this.metadata.description) : 'this.mainDescription' }
+                { hid: 'description', name: 'description', content: this.$t(this.metadata.description) != null ? this.$t(this.metadata.description) : 'this.mainDescription' },
+                { hid: 'og:title', property: 'og:title', content: this.$t(this.metadata.title)},
+                { hid: 'og:type', property: 'og:type', content: 'article'},
+                { hid: 'og:image', property: 'og:image', content: this.immagine_principale},
+                { hid: 'og:image:secure_url', property: 'og:image:secure_url', content: this.immagine_principale},
             ]
         }
     }
